@@ -1,0 +1,17 @@
+<p>about works!</p>
+<div class="form-group">
+    <label for="username">User Name:</label>
+    <input class="form-control" [(ngModel)]="userName">
+    <p>{{ userName }}</p>
+    <label for="password">Password:</label>
+    <input class="form-control" [(ngModel)]="passWord">
+    <p>{{ passWord }}</p>
+    Password length is :{{getLength()}}
+<h2>Two way data binding</h2>
+Two way:
+<input type="text" [(ngModel)]="uname">
+{{uname}}
+
+    <app-login></app-login>
+    
+

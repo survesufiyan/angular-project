@@ -1,0 +1,8 @@
+<h1>Form</h1>
+<div *ngIf="errorMessage && errorMessage !== ''" class="error" id="erroediv">
+    {{errorMessage}}
+</div>
+Name <input type="text" [(ngModel)]="name" /><br>
+Email <input type="text" [(ngModel)]="email" /><br>
+Message <textarea></textarea><br>
+<button (click)="submitform()">click</button>
